@@ -1,0 +1,141 @@
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;   
+}
+body{
+    min-width: 320px;
+    max-width: 425px;
+    margin:auto;
+}
+
+/********** header ***************/
+
+.main--header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #C6C6C6;
+    max-height: 67px;
+    padding-right: 16px;
+    padding-top : 16px;
+    padding-bottom : 10px;
+}
+
+#logo{
+    max-width: 127px;
+    padding-left: 15px;
+}
+
+/********** avatar ***************/
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 20px;
+}
+
+
+/********** posts ***************/
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+/********** posts header ***************/
+
+section{
+    width: 100%;
+}
+
+section > header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 55px;
+    padding-right : 17px;
+    padding-left : 10px;
+}
+
+.text--wrapper{
+    padding-left: 10px;
+    height: 31px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text--wrapper > h2{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+.text--wrapper > p{
+    font-size: 12px;
+    margin: 0;
+}
+
+/********** posts image ***************/
+
+.post--image{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+/********** posts icons ***************/
+.icons--container{
+    display:flex;
+}
+
+.heart{
+    background: url("images/icon-heart.png") no-repeat;
+}
+.comment{
+    background: url("images/icon-comment.png") no-repeat;
+}
+.dm{
+    background: url("images/icon-dm.png") no-repeat;
+}
+
+.heart,
+.comment,
+.dm{
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    display:block;
+    padding-right: 15px; 
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.heart:hover,
+.comment:hover,
+.dm:hover{
+    opacity: 0.5;
+}
+/********** posts content ***************/
+.bold{
+    font-weight: 700;
+}
+
+.content--container{
+    padding: 0px 0px 0px 10px;
+}
+
+.content--container > p {
+    padding-left: 3px;
+    font-size: 13px;
+}
+
+/********** posts container ***************/
+
+.container:not(:first-child){
+    border-top : solid 25px #EDEDED;
+}
