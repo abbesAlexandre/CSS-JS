@@ -23,8 +23,7 @@ const posts = [
     location: "Paris, France",
     avatar: "images/avatar-ducreux.jpg",
     post: "images/post-ducreux.jpg",
-    comment:
-      "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+    comment:"gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
     likes: 152,
   },
 ];
@@ -68,7 +67,7 @@ function setPosts() {
 
     const content_container = document.createElement("div");
     content_container.className = "content--container";
-    
+
     // icons
 
     const icons_container = document.createElement("div");
